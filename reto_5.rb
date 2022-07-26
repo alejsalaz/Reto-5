@@ -1,5 +1,5 @@
 # Preguntas
-# ------------------------------------
+# -------------------------------------
 questions_array =
 [
   {
@@ -74,7 +74,7 @@ questions_array =
 ]
 
 # Funcionalidades
-# ------------------------------------
+# -------------------------------------
 class Question
   attr_accessor :prompt, :answer
 
@@ -157,7 +157,7 @@ def game_over()
 end
 
 # Interfaz
-# ------------------------------------
+# -------------------------------------
 mainloop = true
 while mainloop
   print "=" * 70+"\n" +

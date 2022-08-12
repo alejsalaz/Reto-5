@@ -1,24 +1,40 @@
+# frozen_string_literal: true
+
+# Colorize permite dar colores a los mensajes.
 require 'colorize'
 
 module Banner
-  COLORS = [
-    :black,   :light_black,
-    :red,     :light_red,
-    :green,   :light_green,
-    :yellow,  :light_yellow,
-    :blue,    :light_blue,
-    :magenta, :light_magenta,
-    :cyan,    :light_cyan,
-    :white,   :light_white
+  COLORS = %i[
+    black
+    light_black
+    red
+    light_red
+    green
+    light_green
+    yellow
+    light_yellow
+    blue
+    light_blue
+    magenta
+    light_magenta
+    cyan
+    light_cyan
+    white
+    light_white
   ].freeze
 
-  TITLES = [
-    "Info",   "Warning",
-    "Error",  "Congratulate"
+  TITLES = %w[
+    Info
+    Warning
+    Error
+    Congratulate
+    Greeting
   ].freeze
 
+  # Message contiene todos los métodos para dar formato a las cadenas que se
+  # mostrarán en consola.
   class Message
-    def self.show(title, message)
+    def self.show(title, message, petition: false)
       @title = adjust_text(title)
       @message = adjust_text(message)
 
@@ -33,9 +49,9 @@ module Banner
         # |-───────-|
         bottom_line
       ].join("\n")
+      # ─:
+      print '─:' if petition
     end
-
-    private
 
     def self.adjust_text(string)
       if string.length > 58
@@ -47,29 +63,27 @@ module Banner
 
     def self.top_line
       # |-
-      ("|-").send(@side_color) +
-      # |-Título
-      "#{@title}" +
-      # |-Título─
-      ("─" * (@message.length - (@title.length))).send(@center_color) +
-      # |-Título─-|
-      ("-|").send(@side_color)
+      '|-'.send(@side_color) +
+        # |-Título
+        @title.to_s +
+        # |-Título─
+        ('─' * (@message.length - @title.length)).send(@center_color) +
+        # |-Título─-|
+        '-|'.send(@side_color)
     end
 
     def self.message_line
       # | Mensaje |
-      ("| #{@message} |")
+      "| #{@message} |"
     end
 
     def self.bottom_line
       # |-
-      ("|-").send(@side_color) +
-      # |-───────
-      ("─" * @message.length).send(@center_color) +
-      # |-───────-|
-      ("-|").send(@side_color)
+      '|-'.send(@side_color) +
+        # |-───────
+        ('─' * @message.length).send(@center_color) +
+        # |-───────-|
+        '-|'.send(@side_color)
     end
-
   end
-
 end

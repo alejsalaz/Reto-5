@@ -1,10 +1,10 @@
 Ruby es un lenguaje de programación de propósito general orientado a objetos
 Verdadero | Falso
 ¿Cuál de los siguientes es compatible con Ruby?
-Todas las anteriores | Sistema de tipo dinámico | Manejo automático de memoria | Múltiples paradigmas de programación
+Todas son ciertas | Sistema de tipo dinámico | Manejo automático de memoria | Múltiples paradigmas de programación
 ¿Cuál de los siguientes idiomas coincide con la sintaxis de Ruby?
 Perl | PHP | Java | Jquery
 ¿Cuál es la extensión utilizada para guardar un archivo de Ruby?
-Extensión .rb | Extensión .ruby | Extensión .rrb | Ninguna de las anteriores
+Extensión .rb | Extensión .ruby | Extensión .rrb | Ninguna es cierta
 Ruby se puede incrustar en el lenguaje de marcado de hipertexto (HTML)
 Verdadero | Falso

@@ -16,7 +16,7 @@
 
   Al comenzar el juego tienes tres vidas, pierdes el
   juego si tus vidas se terminan y lo ganas contestando un
-  máximo de 10 preguntas de forma acertada, las
+  máximo de 1̲0̲ preguntas de forma acertada, las
   preguntas son de opción múltiple.
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂

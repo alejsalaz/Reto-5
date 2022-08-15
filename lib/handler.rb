@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Handler contiene los métodos encargados de manipular los archivos de texto.
 module Handler
   def file_opener(file_name)
@@ -5,7 +7,7 @@ module Handler
 
     yield(file)
   ensure
-    file.close & file
+    file.close&.file
   end
 
   def read_file(file_name)
@@ -16,9 +18,12 @@ module Handler
     end
   end
 
-  # TODO: Do this
+  def read_line(file_name, line)
+    IO.readlines(file_name, chomp: true)[line]
+  end
+
   def count_lines(file_name)
-    file_handler(file_name) do |file|
+    file_opener(file_name) do |file|
       count = 0
       count += 1 while file.gets
       count

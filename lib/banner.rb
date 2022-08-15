@@ -24,19 +24,21 @@ module Banner
   ].freeze
 
   TITLES = %w[
-    Info
-    Warning
-    Error
     Congratulate
+    Error
     Greeting
+    Info
+    Question
+    Option
+    Warning
   ].freeze
 
   # Message contiene todos los métodos para dar formato a las cadenas que se
   # mostrarán en consola.
   class Message
     def self.show(title, message, petition: false)
-      @title = adjust_text(title)
-      @message = adjust_text(message)
+      @title = TITLES.include?(title) ? title : TITLES[1]
+      adjust_message(message)
 
       @side_color = COLORS.sample
       @center_color = COLORS.sample
@@ -45,7 +47,7 @@ module Banner
         # |-Título─-|
         top_line,
         # | Mensaje |
-        message_line,
+        @message,
         # |-───────-|
         bottom_line
       ].join("\n")
@@ -53,11 +55,18 @@ module Banner
       print '─:' if petition
     end
 
-    def self.adjust_text(string)
+    def self.adjust_message(string)
+      # |
+      @message = '| '
       if string.length > 58
-        string.slice(1..58)
+        lines = string.scan(/.{1,58}/)
+        # | Mensaje-|
+        # largo
+        @message += lines.join("-|\n")
       else
-        TITLES.include?(string) ? string : string.ljust(58, ' ')
+        @message += string.ljust(58, ' ')
+        # | Mensaje |
+        @message += ' |'
       end
     end
 
@@ -67,21 +76,16 @@ module Banner
         # |-Título
         @title.to_s +
         # |-Título─
-        ('─' * (@message.length - @title.length)).send(@center_color) +
+        ('─' * (58 - @title.length)).send(@center_color) +
         # |-Título─-|
         '-|'.send(@side_color)
-    end
-
-    def self.message_line
-      # | Mensaje |
-      "| #{@message} |"
     end
 
     def self.bottom_line
       # |-
       '|-'.send(@side_color) +
         # |-───────
-        ('─' * @message.length).send(@center_color) +
+        ('─' * 58).send(@center_color) +
         # |-───────-|
         '-|'.send(@side_color)
     end

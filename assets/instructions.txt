@@ -14,10 +14,13 @@
  ¿Ｃóｍｏ ｊｕｇａｒ？
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
-  Al comenzar el juego tienes tres vidas, pierdes el
+  Al comenzar el juego tienes cinco vidas, pierdes el
   juego si tus vidas se terminan y lo ganas contestando un
   máximo de 1̲0̲ preguntas de forma acertada, las
   preguntas son de opción múltiple.
+
+  Puedes repetir el juego al finalizar si así lo quieres,
+  pero cada vez que lo hagas tendrás menos vidas.
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 

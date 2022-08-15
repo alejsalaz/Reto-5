@@ -13,33 +13,43 @@ module Questionnaire
     include Banner
     include Handler
 
-    attr_accessor :total_questions
+    attr_accessor :questions_left
 
     def initialize
       Message.show('Info', 'Ingresa el número de preguntas que quieres contestar.', petition: true)
-      @total_questions = gets.chomp.to_i
+      @questions_left = gets.chomp.to_i
 
-      until total_questions.between?(5, 10)
+      until questions_left.between?(5, 10)
         Message.show('Error', 'El número debe estar entre 5 y 10.', petition: true)
-        @total_questions = gets.chomp.to_i
+        @questions_left = gets.chomp.to_i
       end
 
       @questions = (0..count_lines('assets/questions.txt') - 1).to_a.shuffle.delete_if(&:odd?)
     end
 
-    def ask_question
-      current_question = @questions.pop
-      Message.show('Question', read_line('assets/questions.txt', current_question))
+    def pop_question
+      @current_question = @questions.pop
+      @current_answer = [read_line('assets/questions.txt', @current_question + 1).split(' | ')[0]]
 
-      @answers = read_line('assets/questions.txt', current_question + 1).split(' | ').shuffle
-      index = 0
-      @answers.each do |option|
-        Message.show('Option', "#{OPTIONS[index]} ─:#{option}")
-        index += 1
-      end
+      Message.show('Question', read_line('assets/questions.txt', @current_question))
     end
 
-    def rate_answer
+    def print_prompts
+      @current_prompts = read_line('assets/questions.txt', @current_question + 1).split(' | ').shuffle
+
+      options = []
+      @current_prompts.each_with_index do |prompt, index|
+        options << "#{OPTIONS[index]} ─:#{prompt}"
+      end
+
+      Message.multiple_show('Options', options)
+    end
+
+    def correct_answer?
+      @current_prompts.each_with_index do |prompt, index|
+        @current_answer << OPTIONS[index] if prompt == @current_answer[0]
+      end
+
       Message.show('Info', 'Ingresa la opción correcta', petition: true)
       answer = gets.chomp.capitalize
 
@@ -47,10 +57,12 @@ module Questionnaire
         Message.show('Error', 'Ingresa el caracter que identifica la respuesta.', petition: true)
         answer = gets.chomp.capitalize
       end
+
+      answer == @current_answer[1]
     end
 
     def valid_answer?(answer)
-      case @answers.size
+      case @current_prompts.size
       when 2
         answer.match?('^[a-bA-B]{1}$')
       when 4

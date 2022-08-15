@@ -32,14 +32,14 @@ Al finalizar el juego tu puntaje base quedará de la siguiente forma:
 
 ---
 
-**Nota:** Por cada pregunta que contestes correctamente a la primera sumarás <u>25 puntos</u>.
+**Nota:** Por cada pregunta que contestes correctamente sumarás <u>25 puntos</u>.
 
 ## Modificar
 
 El juego utiliza las preguntas localizadas en el en el  directorio [assets/questions.txt](assets/questions.txt), de querer cambiar las preguntas se debe modificar el archivo teniendo en cuenta lo siguiente:
 
-1. Las preguntas deben ser cortas y se deben localizar en las líneas impares.
-2. Las respuestas deben ser cortas también, cada respuesta para una pregunta debe ir separada por una barra vertical, la primera respuesta debe ser la respuesta correcta.
+1. Las preguntas deben ser cortas (máximo 58 caracteres) y se deben localizar en las líneas impares.
+2. Las respuestas deben ser cortas también, cada una debe ir separada por una barra vertical, la primera respuesta debe ser la respuesta correcta.
 
 Ejemplo:
 

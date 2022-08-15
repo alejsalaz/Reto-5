@@ -23,21 +23,13 @@ module Banner
     light_white
   ].freeze
 
-  TITLES = %w[
-    Congratulate
-    Error
-    Greeting
-    Info
-    Question
-    Option
-    Warning
-  ].freeze
-
   # Message contiene todos los métodos para dar formato a las cadenas que se
   # mostrarán en consola.
   class Message
+    # Títulos recomendados: Congrats, Error, Game Over,
+    # Greeting, Info, Question, Options, Warning.
     def self.show(title, message, petition: false)
-      @title = TITLES.include?(title) ? title : TITLES[1]
+      @title = title.length > 58 ? title.slice(1..58).capitalize : title
       adjust_message(message)
 
       @side_color = COLORS.sample
@@ -88,6 +80,27 @@ module Banner
         ('─' * 58).send(@center_color) +
         # |-───────-|
         '-|'.send(@side_color)
+    end
+
+    def self.space
+      puts ('=' * 62).send(COLORS.sample)
+    end
+
+    def self.multiple_show(title, message, petition: false)
+      @title = title.length > 58 ? title.slice(1..58).capitalize : title
+
+      @side_color = COLORS.sample
+      @center_color = COLORS.sample
+
+      # |-Título─────-|
+      puts top_line
+      # | A. Mensajes |
+      # | B. Mensajes |
+      message.each { |line| puts "| #{line.ljust(58, ' ')} |" }
+      # |-───────────-|
+      puts bottom_line
+      # ─:
+      print '─:' if petition
     end
   end
 end

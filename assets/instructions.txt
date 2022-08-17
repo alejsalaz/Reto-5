@@ -14,13 +14,11 @@
  ¿Ｃóｍｏ ｊｕｇａｒ？
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
-  Al comenzar el juego tienes cinco vidas, pierdes el
-  juego si tus vidas se terminan y lo ganas contestando un
-  máximo de 1̲0̲ preguntas de forma acertada, las
-  preguntas son de opción múltiple.
-
-  Puedes repetir el juego al finalizar si así lo quieres,
-  pero cada vez que lo hagas tendrás menos vidas.
+  Tu objetivo es obtener el mayor número de puntos y responder
+  el mayor número de preguntas antes de quedarte sin vidas
+  o sin intentos. Al comenzar el juego tienes cinco vidas
+  y 100 puntos, ganas más puntos contestando un máximo
+  de 1̲0̲ preguntas de opción múltiple de forma acertada.
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 

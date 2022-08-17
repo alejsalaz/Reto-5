@@ -1,10 +1,116 @@
-Ruby es un lenguaje de programación de propósito general orientado a objetos
-Verdadero | Falso
-¿Cuál de los siguientes es compatible con Ruby?
-Todas son ciertas | Sistema de tipo dinámico | Manejo automático de memoria | Múltiples paradigmas de programación
-¿Cuál de los siguientes idiomas coincide con la sintaxis de Ruby?
-Perl | PHP | Java | Jquery
-¿Cuál es la extensión utilizada para guardar un archivo de Ruby?
-Extensión .rb | Extensión .ruby | Extensión .rrb | Ninguna es cierta
-Ruby se puede incrustar en el lenguaje de marcado de hipertexto (HTML)
-Verdadero | Falso
+¿Cuántos litros de sangre tiene una persona adulta?
+entre 4 y 6 litros | entre 2 y 4 litros | 10 litros | 7 litros
+¿Quién es el autor de la frase "Pienso, luego existo"?
+Descartes | Platón | Galileo Galilei | Sócrates
+¿Cuál es el país más grande y el más pequeño del mundo?
+Rusia y Vaticano | China y Nauru | Canadá y Mónaco | Estados Unidos y Malta
+¿Cuál es el libro más vendido en el mundo después de la Biblia?
+Don Quijote de la Mancha | El Señor de los Anillos | El Principito | Cien años de Soledad
+¿Cuántos decimales tiene el número pi π?
+Infinitos | Dos | Cien | Mil
+La sal común está formada por dos elementos, ¿cuáles son?
+Sodio y cloro | Sodio y potasio | Sodio y carbono | Potasio y cloro
+¿Cuántos jugadores por equipo participan en un partido de voleibol?
+6 jugadores | 2 jugadores | 3 jugadores | 4 jugadores
+¿Quién pintó la obra "Guernica"?
+Pablo Picasso | Paul Cézanne | Diego Rivera | Salvador Dalí
+¿Cuánto tiempo tarda la luz del Sol en llegar a la Tierra?
+8 minutos | 12 minutos | 1 día | 12 horas
+¿Cuál es la nacionalidad de Jorge Mario Bergoglio?
+Argentina | Mexicana | Española | Italiana
+¿Cuál es la altura de la red de voleibol en los juegos masculino y femenino?
+2,43 m y 2,24 m | 2,4 m | 2,5 m y 2,0 m | 1,8 m y 1,5 m
+¿En qué periodo de la prehistoria fue descubierto el fuego?
+Paleolítico | Neolítico | Edad de los metales | Edad de piedra
+¿A quién se le atribuye la frase "Solo sé que no sé nada"?
+Sócrates | Aristóteles | Nietszche | Sófocles
+¿Cuál es la montaña más alta del continente americano?
+Aconcagua | Monte Everest | Pico Neblina | Pico Bolívar
+¿En qué país de África el español es la lengua oficial?
+Guinea ecuatorial | Costa de Marfil | Sierra Leona | Cabo Verde
+¿Qué hora es en inglés "It is a quarter past six"?
+6:15 | 3:46 | 6:45 | 5:15
+¿Quién es el autor de "El Príncipe"?
+Nicolás Maquiavelo | Antoine de Saint-Exupery | Charles de Gales | Friedrich Nietzche
+¿Cuál es la conjugación del verbo "caber" en la primera persona del singular del presente indicativo?
+Yo quepo | Yo cabo | Nosotros cabemos | Nosotros quepamos
+¿Cuál de estos países se extiende entre dos continentes?
+Rusia | Tanzania | Groenlandia | Egipto
+¿Cuál fue el recurso utilizado inicialmente por el ser humano para explicar el origen de las cosas?
+La mitología | La astronomía | La matemática | La biología
+¿Cuáles son los dioses griegos correspondientes a los dioses romanos Júpiter y Plutón?
+Zeus y Hades | Ares y Hermes | Cronos y Apolo | Dionisio y Démeter
+¿Cuál es el animal terrestre más grande en la actualidad?
+Elefante africano | Jirafa | Tiburón blanco | Diplodocus
+¿Qué líder mundial quedó conocida como "La Dama de Hierro"?
+Margaret Thatcher | Dilma Rouseff | Angela Merkel | Hillary Clinton
+¿Cuál es la religión monoteísta que cuenta con el mayor número de adeptos en el mundo?
+Cristianismo | Judaísmo | Zoroastrismo | Islamismo
+¿Quién fue el primer hombre en pisar la Luna?
+Neil Armstrong | Yuri Gagarin | Buzz Aldrin | Charles Conrad
+¿Quién descubrió la vacuna contra la rabia y el proceso de pasteurización?
+Louis Pasteur | Charles Darwin | Louis Pasteur | Marie Curie
+¿Cuál es el tipo sanguíneo considerado como "donante universal"?
+Tipo O | Tipo A | Tipo B | Tipo AB
+¿Cuál es el cromosoma que determina el sexo masculino?
+Y | X | V | M
+¿Cuál es la capital de Australia?
+Canberra | Melbourne | Sydney | Adelaide
+¿Cuál es la organización juvenil fundada por Baden-Powell?
+Boy scouts | Juventud socialista | Testigos de Jehová | YMCA
+Según la leyenda de la fundación de Roma, ¿quién amamantó a los gemelos Rómulo y Remo?
+Una loba | Una gata | Una oveja | Una vaca
+¿En el exterior de qué edificio famoso en Francia fue construida una enorme pirámide de vidrio?
+Museo de Louvre | Torre Eiffel | Arco del Triunfo | Grand Palais
+¿Cómo se llaman los vasos que transportan la sangre desde el corazón al resto del cuerpo?
+Arterias | Venas | Capilares | Articulaciones
+¿Con qué países tiene frontera Ecuador?
+Colombia y Perú | Brasil y Colombia | Colombia y Venezuela | Perú y Bolivia
+¿Qué animal gluglutea?
+El pavo | El pato | La garza | La guacamaya
+¿Cuál es el mayor archipiélago de la Tierra?
+Indonesia | Filipinas | Colombia | Bahamas
+¿Qué sustancia es absorbida por las plantas y expirada por los animales?
+Dióxido de carbono | Oxígeno | Nitrógeno | Nitrato de sodio
+¿En qué océano queda Madagascar?
+Índico | Antártico | Ártico | Atlántico
+¿Cuál artista es conocido como uno de los exponentes máximos del ready-made (objeto-encontrado)?
+Marcel Duchamp | Pablo Picasso | Salvador Dalí | Marcel Duchamp
+¿Cuál es el metal cuyo símbolo químico es Au?
+Oro | Actinio | Antimonio | Arsénico
+¿En qué siglo el continente europeo fue devastado por la peste bubónica?
+Siglo XIV | Siglo XIII | Siglo XII | Siglo XI
+¿En qué ciudad tuvo lugar la Eco-92, una conferencia de las Naciones Unidas sobre el ambiente y el desarrollo?
+Rio de Janeiro | Buenos Aires | Montevideo | Asunción
+¿Quién pintó la bóveda de la capilla sixtina?
+Miguel Angel | Leonardo da Vinci | Rafael | Boticelli
+¿Cuántos grados son necesarios para que dos ángulos sean complementarios?
+90 º | 80 º | 360 º | 60 º
+¿Quién fue el creador de la tragedia griega?
+Esquilo | Eurípides | Homero | Plutarco
+¿De qué grupo era vocalista Jim Morrison?
+The Doors | The Police | Pink Floyd | Nirvana
+¿De qué país fue primera ministro Benazir Bhuto?
+Pakistán | Inglaterra | Israel | India
+¿Por qué película recibió un premio Oscar Leonardo DiCaprio?
+The Revenant | Once Upon a Time... in Holliwood | El Lobo de Wall Street | Titanic
+¿Cuántos jugadores pueden participar por equipo en el basquetbol?
+5 | 6 | 4 | 7
+¿Cuál de estos países tiene como idioma oficial el francés?
+Haití | Suecia | Líbano | Andorra
+¿Dónde se encuentra el gran colisionador de hadrones?
+Entre Francia y Suiza | Entre Portugal y España | Entre España y Francia | Entre Italia y Alemania
+¿Cuáles de los siguientes compuestos son polisacáridos?
+Almidón y celulosa | Colesterol y triglicéridos | Insulina y vitamina A | Metano y etano
+¿Cuál es el único número primo par?
+2 | 3 | 4 | 5
+¿Dónde se originaron los números arábigos?
+India | Grecia | Roma | Persia
+¿Cuándo se inició la Primera Guerra Mundial?
+28/07/1914 | 11/11/1918 | 01/09/1939 | 02/09/1945
+¿Cómo se llaman los lados de un triángulo rectángulo?
+Hipotenusa y catetos | Segmento y ángulo | Adyacente y opuesto | Tangente y coseno
+¿Cuáles son las partes de una fracción?
+Numerador y denominador | Número y denominado | Superior e inferior | Dependiente e independiente
+¿Cómo lo chupa Mailax?
+Duro | Suave

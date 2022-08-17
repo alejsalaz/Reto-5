@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Handler contiene los métodos encargados de manipular los archivos de texto.
-module Handler
+module FileHandler
   def file_opener(file_name)
     file = File.open(file_name)
 

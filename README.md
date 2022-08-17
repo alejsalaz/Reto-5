@@ -17,29 +17,23 @@ Al comenzar el juego tienes <u>tres vidas</u>, pierdes el juego si tus vidas se 
 
 Al finalizar el juego tu puntaje base quedará de la siguiente forma:
 
-<style>
-    table {
-        width: 100%;
-    }
-</style>
-
 | **Puntaje** | **Vidas** |
 |:-----------:|:---------:|
-| 100         | 3         |
-| 50          | 2         |
-| 25          | 1         |
-| 0           | 0         |
+| 100         | 5         |
+| 50          | 4         |
+| 25          | 3         |
+| 0           | < 3       |
 
 ---
 
-**Nota:** Por cada pregunta que contestes correctamente sumarás <u>25 puntos</u>.
+**Nota:** Por cada pregunta que contestes correctamente sumarás <u>25 puntos</u> extra.
 
 ## Modificar
 
 El juego utiliza las preguntas localizadas en el en el  directorio [assets/questions.txt](assets/questions.txt), de querer cambiar las preguntas se debe modificar el archivo teniendo en cuenta lo siguiente:
 
-1. Las preguntas deben ser cortas (máximo 58 caracteres) y se deben localizar en las líneas impares.
-2. Las respuestas deben ser cortas también, cada una debe ir separada por una barra vertical, la primera respuesta debe ser la respuesta correcta.
+1. Las preguntas deben ser cortas y se deben localizar en las líneas impares.
+2. Las respuestas deben ser de máximo 58 caracteres, cada una debe ir separada por una barra vertical y la primera respuesta debe ser la respuesta correcta.
 
 Ejemplo:
 

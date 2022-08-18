@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Printer será necesario para imprimir los mensajes decorados.
-require './lib/printer'
+require_relative 'printer'
 # Player maneja la lógica del jugador, su nombre, puntaje y vidas.
 class Player
   include Printer
@@ -17,6 +17,18 @@ class Player
     @answered_questions = 0
   end
 
+  def request_name
+    print_request_name
+    name = gets.chomp.capitalize
+
+    until valid_name?(name)
+      print_invalid_name
+      name = gets.chomp.capitalize
+    end
+
+    name
+  end
+
   def print_request_name
     beautiful_print(
       'Info',
@@ -25,15 +37,8 @@ class Player
     )
   end
 
-  def request_name
-    print_request_name
-    name = gets.chomp.capitalize
-    until name.match(/^\D+$/) && !name.strip.empty?
-      print_invalid_name
-      name = gets.chomp.capitalize
-    end
-
-    name
+  def valid_name?(name)
+    name.match(/^\D+$/) && !name.strip.empty?
   end
 
   def print_invalid_name
@@ -49,7 +54,7 @@ class Player
   end
 
   def print_final_stats
-    array_beautiful_print(
+    beautiful_array_print(
       'Puntaje final', [
         "Vidas: #{@lives}",
         "Pts base: #{@base_score}",

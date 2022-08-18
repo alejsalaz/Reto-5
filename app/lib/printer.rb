@@ -30,6 +30,7 @@ module Printer
 
     @side_color = COLORS.sample
     @center_color = COLORS.sample
+
     puts [
       # |-Título─-|
       top_line,
@@ -79,11 +80,11 @@ module Printer
       '-|'.send(@side_color)
   end
 
-  def put_space
+  def beautiful_space
     puts ('=' * 62).send(COLORS.sample)
   end
 
-  def array_beautiful_print(title, message, petition: false)
+  def beautiful_array_print(title, message, petition: false)
     @title = title.length > 58 ? title.slice(1..58).capitalize : title
 
     @side_color = COLORS.sample
@@ -92,6 +93,7 @@ module Printer
     puts top_line
     # | A. Mensajes |
     # | B. Mensajes |
+    # TODO: Don't put so much
     message.each { |line| puts "| #{line.ljust(58, ' ')} |" }
     # |-───────────-|
     puts bottom_line

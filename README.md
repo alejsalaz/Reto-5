@@ -22,7 +22,9 @@ Al finalizar el juego tu puntaje base quedará de la siguiente forma:
 | 100         | 5         |
 | 50          | 4         |
 | 25          | 3         |
-| 0           | < 3       |
+| 12          | 2         |
+| 6           | 1         |
+| 0           | 0         |
 
 ---
 
@@ -33,7 +35,7 @@ Al finalizar el juego tu puntaje base quedará de la siguiente forma:
 El juego utiliza las preguntas localizadas en el en el  directorio [assets/questions.txt](assets/questions.txt), de querer cambiar las preguntas se debe modificar el archivo teniendo en cuenta lo siguiente:
 
 1. Las preguntas deben ser cortas y se deben localizar en las líneas impares.
-2. Las respuestas deben ser de máximo 58 caracteres, cada una debe ir separada por una barra vertical y la primera respuesta debe ser la respuesta correcta.
+2. Las opciones de respuesta deben ser de máximo 58 caracteres, cada una debe ir separada por una barra vertical y la primera respuesta debe ser la respuesta correcta.
 
 Ejemplo:
 

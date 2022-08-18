@@ -1,0 +1,49 @@
+▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+8888888b.          888                  888888888
+888   Y88b         888                  888
+888    888         888                  888
+888   d88P .d88b.  888888 .d88b.        8888888b.
+8888888P" d8P  Y8b 888   d88""88b            "Y88b
+888 T88b  88888888 888   888  888 888888       888
+888  T88b Y8b.     Y88b. Y88..88P       Y88b  d88P
+888   T88b "Y8888   "Y888 "Y88P"         "Y8888P"
+
+▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+ ¿Ｃóｍｏ ｕｓａｒ？
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+  Sigue las instrucciones para añadir, leer y modificar tus
+  propias preguntas, ten en cuenta lo siguiente:
+
+    - Las preguntas deben ser cortas y se deben localizar en
+    las líneas impares.
+    - Las opciones de respuesta deben ser de máximo 58
+    caracteres, cada una debe ir separada por una barra
+    vertical y la primera respuesta debe ser la respuesta
+    correcta.
+
+  Mira un ejemplo para aclarar las cosas:
+
+    1. ¿Esta es una pregunta?
+    2. Sí | No
+    3. ¿El tres es un número par?
+    4. No | Sí
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+ ¿Ｑｕé ｄｅｓｅａｓ ｈａｃｅｒ？
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+
+  1. Mostrar preguntas
+  2. Consultar una pregunta
+  3. Añadir una pregunta
+  4. Modificar una pregunta
+  5. Eliminar una pregunta
+  6. Salir
+
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+

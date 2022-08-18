@@ -1,33 +1,34 @@
 # frozen_string_literal: true
 
 # Player contiene la lógica relacionada con el jugador.
-require './lib/player'
+require_relative 'player'
 # Quiz será necesario para mostrar y evaluar las preguntas hechas.
-require './lib/quiz'
+require_relative 'quiz'
 
 # Game maneja todo el transcurso del juego.
 class Game
-  extend FileHandler
   extend Printer
-  # Introducción
-  read_file('assets/instructions.txt')
-  beautiful_print('Greeting', '¡Te damos la bienvenida!')
-  # Ajustando juego
-  @player = Player.new
-  @replay = true
-  @left_attempts = 5
-  # Jugando
+
   def self.run
+    @player = Player.new
+    @replay = true
+    @left_attempts = 5
+
+    cycle
+  end
+
+  def self.cycle
     until @left_attempts.zero?
       play
 
       @player.lives = @left_attempts -= 1
-      # Fin del juego
-      if @left_attempts != 0
+
+      if @left_attempts.positive?
         print_request_replay
-        replay = gets.chomp.to_i
+        replay = gets.chomp
         validate_replay(replay)
       end
+
       break unless @replay
     end
   end
@@ -37,13 +38,13 @@ class Game
     until @quiz.questions_left.zero?
       game_over and break if @player.lives.zero?
 
-      put_space
+      beautiful_space
       # <3: 3 | pts: 0 | ?: 2
       @player.print_stats(@quiz.questions_left)
       # ¿Cuál es la extensión utilizada para guardar un archivo de Ruby?
       @quiz.pop_question
       # .rb | .rrb | .ruby | Ninguna
-      @quiz.print_prompts
+      @quiz.print_options
 
       update_stats
     end
@@ -53,13 +54,14 @@ class Game
 
   def self.request_quiz
     beautiful_print('Info', 'Ingresa el número de preguntas que quieres contestar.', petition: true)
-    questions_left = gets.chomp.to_i
-    until questions_left.between?(5, 10)
+    questions_left = gets.chomp
+
+    until questions_left.match?(/^[5-9]?$|^10$/)
       beautiful_print('Error', 'El número debe estar entre 5 y 10.', petition: true)
-      questions_left = gets.chomp.to_i
+      questions_left = gets.chomp
     end
 
-    questions_left
+    questions_left.to_i
   end
 
   def self.game_over
@@ -87,16 +89,16 @@ class Game
   end
 
   def self.validate_replay(replay)
-    until replay.between?(1, 2)
+    until replay.match(/^[1-2]$/)
       print_request_replay
-      replay = gets.chomp.to_i
+      replay = gets.chomp
     end
 
-    @replay = false if replay == 2
+    @replay = false if replay.to_i.eql?(2)
   end
 
   def self.print_request_replay
-    array_beautiful_print(
+    beautiful_array_print(
       'Info',
       [
         '¿Quieres jugar otra vez? | 1: Sí | 2: No |',
@@ -106,5 +108,3 @@ class Game
     )
   end
 end
-
-Game.run

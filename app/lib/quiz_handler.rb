@@ -36,16 +36,6 @@ class QuizHandler
     run_action(action)
   end
 
-  def self.show_question
-    request_question_index
-    question = gets.chomp
-    validate_question(question)
-  end
-
-  def self.add_question
-    QuestionsController.add(request_question_statement, request_question_answer)
-  end
-
   def self.run_action(action)
     case action.to_i
     when 1 then QuestionsController.index
@@ -57,6 +47,13 @@ class QuizHandler
     else
       print_file('./app/assets/error.txt')
     end
+  end
+
+  def self.show_question
+    request_question_index
+
+    question = gets.chomp
+    validate_question(question)
   end
 
   def self.request_question_index
@@ -76,14 +73,8 @@ class QuizHandler
     question.match(/^\d+$/) && question.to_i < count_lines('./app/model/questions.txt')
   end
 
-  def self.request_question_statement
-    beautiful_print('Info', 'Ingresa el enunciado de la pregunta', petition: true)
-    gets.chomp
-  end
-
-  def self.request_question_answer
-    beautiful_print('Info', 'Ingresa las respuestas, ten en cuenta las recomendaciones.', petition: true)
-    gets.chomp
+  def self.add_question
+    QuestionsController.add(request_question_statement, request_question_answer)
   end
 
   def self.validate_question_index(question = 'invalid question')
@@ -93,5 +84,15 @@ class QuizHandler
     end
 
     question.to_i + (question.to_i - 2)
+  end
+
+  def self.request_question_statement
+    beautiful_print('Info', 'Ingresa el enunciado de la pregunta', petition: true)
+    gets.chomp
+  end
+
+  def self.request_question_answer
+    beautiful_print('Info', 'Ingresa las respuestas, ten en cuenta las recomendaciones.', petition: true)
+    gets.chomp
   end
 end

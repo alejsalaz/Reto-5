@@ -67,10 +67,10 @@ class Quiz
 
   def valid_answer?(answer)
     case @current_options.size
-    when 2
-      answer.match?('^[a-bA-B]{1}$')
-    when 4
-      answer.match?('^[a-dA-D]{1}$')
+    when 2 then answer.match?('^[a-bA-B]{1}$')
+    when 4 then answer.match?('^[a-dA-D]{1}$')
+    else
+      beautiful_print('Error', 'Hay un problema con la cantidad de respuestas de esta pregunta.')
     end
   end
 end

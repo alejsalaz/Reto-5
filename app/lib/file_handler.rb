@@ -48,14 +48,18 @@ module FileHandler
 
   def overwrite_lines(file_name, line_number, new_lines)
     file_content = read_file(file_name)
+
     file_content[line_number] = "#{new_lines[0]}\n"
     file_content[line_number + 1] = "#{new_lines[1]}\n"
+
     write_file(file_name, file_content)
   end
 
   def delete_lines(file_name, line_number)
     file_content = read_file(file_name)
+
     2.times { file_content.delete_at(line_number + 1) }
+
     write_file(file_name, file_content)
   end
 

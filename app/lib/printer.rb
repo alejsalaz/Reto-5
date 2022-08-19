@@ -23,6 +23,7 @@ module Printer
     white
     light_white
   ].freeze
+
   # Títulos recomendados: Congrats, Error, Game Over,
   # Greeting, Info, Question, Options, Warning.
   def beautiful_print(title, message, petition: false)

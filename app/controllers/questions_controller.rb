@@ -10,16 +10,14 @@ class QuestionsController
   extend Printer
 
   def self.index
-    current_question = 0
-
     questions_array = (0..count_lines('./app/model/questions.txt') - 1).to_a.delete_if(&:odd?)
-    questions_array.each do |question_index|
-      current_question += 1
 
+    questions_array.each do |question_index|
       beautiful_print(
         'Question',
-        "Pregunta n°#{current_question}: #{read_line('./app/model/questions.txt', question_index)}"
+        "Pregunta n°#{(question_index / 2) + 1}: #{read_line('./app/model/questions.txt', question_index)}"
       )
+
       beautiful_array_print('Options', read_line('./app/model/questions.txt', question_index + 1).split(' | '))
     end
   end
@@ -32,6 +30,7 @@ class QuestionsController
         'Question',
         read_line('./app/model/questions.txt', question_index)
       )
+
       beautiful_array_print('Options', read_line('./app/model/questions.txt', question_index + 1).split(' | '))
     end
   end

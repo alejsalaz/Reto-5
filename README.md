@@ -13,9 +13,11 @@ El ejecutable se encuentra en el  directorio [bin/reto.rb](bin/reto.rb).
 
 ## Jugar
 
-Al ejecutar el archivo de la ruta [bin/reto.rb](bin/reto.rb) tendrás la opción de iniciar un nuevo juego o entrar a modificar las preguntas.Al escoger comenzar el juego tienes <u>tres vidas</u>, pierdes el juego si tus vidas se terminan y lo ganas contestando un máximo de <u>10 preguntas</u> de forma acertada, las preguntas son de opción múltiple.
+El juego se inicia ejecutando el archivo de la ruta [bin/reto.rb](bin/reto.rb) y seleccionando la opción para jugar.
 
-Al finalizar el juego tu puntaje base quedará de la siguiente forma:
+Al comenzar el juego tienes cinco vidas y cinco intentos restantes, el juego te pedirá la cantidad de preguntas que quieres contestar, serán de cinco a 10 preguntas, pierdes una vida por cada pregunta que contestas incorrectamente y si se te terminan las vidas se acaba el intento, aunque el intento también termina cuando contestas todas las preguntas correctamente. Si escoges seguir jugando tras acabarse el primer intento entonces comenzarás nuevamente con cuatro vidas, el proceso se repite hasta que ya no te quedan intentos.
+
+Este será tu puntaje base en cada ronda:
 
 | **Puntaje** | **Vidas** |
 |:-----------:|:---------:|

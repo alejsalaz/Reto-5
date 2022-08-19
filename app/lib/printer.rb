@@ -26,18 +26,18 @@ module Printer
   # Títulos recomendados: Congrats, Error, Game Over,
   # Greeting, Info, Question, Options, Warning.
   def beautiful_print(title, message, petition: false)
-    @title = title.length > 58 ? title.slice(1..58).capitalize : title
+    title = title.length > 58 ? title.slice(1..58).capitalize : title
 
-    @side_color = COLORS.sample
-    @center_color = COLORS.sample
+    side_color = COLORS.sample
+    center_color = COLORS.sample
 
     puts [
       # |-Título─-|
-      top_line,
+      top_line(title, side_color, center_color),
       # | Mensaje |
       adjust_message(message),
       # |-───────-|
-      bottom_line
+      bottom_line(side_color, center_color)
     ].join("\n")
     # ─:
     print '─:' if petition
@@ -46,6 +46,7 @@ module Printer
   def adjust_message(string)
     # |
     message = '| '
+
     if string.length > 58
       lines = string.scan(/.{1,58}/)
       # | Mensaje-|
@@ -60,24 +61,24 @@ module Printer
     message
   end
 
-  def top_line
+  def top_line(title, side_color, center_color)
     # |-
-    '|-'.send(@side_color) +
+    '|-'.send(side_color) +
       # |-Título
-      @title.to_s +
+      title.to_s +
       # |-Título─
-      ('─' * (58 - @title.length)).send(@center_color) +
+      ('─' * (58 - title.length)).send(center_color) +
       # |-Título─-|
-      '-|'.send(@side_color)
+      '-|'.send(side_color)
   end
 
-  def bottom_line
+  def bottom_line(side_color, center_color)
     # |-
-    '|-'.send(@side_color) +
+    '|-'.send(side_color) +
       # |-───────
-      ('─' * 58).send(@center_color) +
+      ('─' * 58).send(center_color) +
       # |-───────-|
-      '-|'.send(@side_color)
+      '-|'.send(side_color)
   end
 
   def beautiful_space
@@ -85,18 +86,17 @@ module Printer
   end
 
   def beautiful_array_print(title, message, petition: false)
-    @title = title.length > 58 ? title.slice(1..58).capitalize : title
+    title = title.length > 58 ? title.slice(1..58).capitalize : title
 
-    @side_color = COLORS.sample
-    @center_color = COLORS.sample
+    side_color = COLORS.sample
+    center_color = COLORS.sample
     # |-Título─────-|
-    puts top_line
+    puts top_line(title, side_color, center_color)
     # | A. Mensajes |
     # | B. Mensajes |
-    # TODO: Don't put so much
     message.each { |line| puts "| #{line.ljust(58, ' ')} |" }
     # |-───────────-|
-    puts bottom_line
+    puts bottom_line(side_color, center_color)
     # ─:
     print '─:' if petition
   end

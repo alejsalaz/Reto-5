@@ -113,4 +113,5 @@ Hipotenusa y catetos | Segmento y ángulo | Adyacente y opuesto | Tangente y cos
 ¿Cuáles son las partes de una fracción?
 Numerador y denominador | Número y denominado | Superior e inferior | Dependiente e independiente
 ¿Pam parán pam pam?
-Sí sé | No sé
+Sí sé | No sé | A
+ccualquier cosa

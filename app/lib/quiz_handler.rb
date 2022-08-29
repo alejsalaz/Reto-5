@@ -39,8 +39,9 @@ class QuizHandler
   def self.run_action(action)
     case action.to_i
     when 1 then QuestionsController.index
+    # TODO: look at the others, why isn't this one like that?
     when 2 then show_question
-    when 3 then add_question
+    when 3 then QuestionsController.add(request_question_statement, request_question_answer)
     when 4 then QuestionsController.edit(validate_question_index, request_question_statement, request_question_answer)
     when 5 then QuestionsController.destroy(validate_question_index)
     when 6 then @quit = true
@@ -65,18 +66,16 @@ class QuizHandler
       request_question_index
       question = gets.chomp
     end
-
+    # TODO: (question * 2) - 2
     QuestionsController.show(question.to_i + (question.to_i - 2))
   end
 
+  # TODO: check if it is receiving the number of the question or the line number
   def self.valid_question_index?(question)
     question.match(/^\d+$/) && question.to_i < count_lines('./app/model/questions.txt')
   end
 
-  def self.add_question
-    QuestionsController.add(request_question_statement, request_question_answer)
-  end
-
+  # TODO: delete question = 'invalid question'?
   def self.validate_question_index(question = 'invalid question')
     until valid_question_index?(question)
       request_question_index
